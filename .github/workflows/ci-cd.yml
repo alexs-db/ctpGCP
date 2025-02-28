@@ -37,9 +37,9 @@ jobs:
 #      - name: Configure Docker (si nécessaire)
 #        run: gcloud auth configure-docker
 
-#      - name: Build image cloud
- #       working-directory: ./application
-  #      run: gcloud builds submit --tag gcr.io/ctpgcp/flask-ctp-ci-cd .
+       - name: Build image cloud
+         working-directory: ./application
+         run: gcloud builds submit --tag gcr.io/ctpgcp/flask-ctp-ci-cd .
 
 
 
