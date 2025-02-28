@@ -7,7 +7,7 @@ resource "google_storage_bucket" "bucket" {
 
 # Déployer l'application sur Cloud Run
 resource "google_cloud_run_service" "cloud_run" {
-  name     = "flask-tp-ci-cd"
+  name     = "flask-ctp-ci-cd"
   location = var.region
 
   template {
