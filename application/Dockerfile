@@ -17,4 +17,4 @@ EXPOSE 8080
 
 ENV BUCKET_NAME=""    
 # Commande pour démarrer l'application
-CMD ["python3", "app_ctp.py"]
+CMD ["python3", "/app/app_ctp.py"]
