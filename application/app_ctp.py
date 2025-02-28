@@ -17,8 +17,9 @@ def get_storage_client():
     """Initialise le client Google Cloud Storage."""
     return storage.Client()
 
-
-
+@app.route('/app/<name>')
+def afficherLien(World):
+return f'Hello {name}'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
